@@ -9,7 +9,7 @@ const video = document.querySelector(".video");
 gsap.registerPlugin(ScrollTrigger);
 
 // Video animation
-let accelAmount = 0.25;
+let accelAmount = 0.5;
 let scrollPosition = 0;
 let delay = 0;
 let myInterval = null;
