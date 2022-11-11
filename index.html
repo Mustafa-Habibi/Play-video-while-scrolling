@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play video while scrolling</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" src="src/script.js"></script>
+  </head>
+  <body>
+    <div class="helper">
+      <h1 class="helper__h1">Hello</h1>
+    </div>
+
+    <div class="video-wrapper">
+      <div class="video-pinned">
+        <video class="video" muted>
+          <source src="/src/static/airpod.mp4" type="video/mp4" />
+          <source src="/src/static/airpod.webm" type="video/webm" />
+          Your browser does not suppoer the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="helper">
+      <h1 class="helper__h1">Bye</h1>
+    </div>
+  </body>
+</html>
