@@ -1,19 +1,25 @@
 {
-  "name": "play-video-on-scroll",
+  "name": "play-video-while-scrolling",
   "version": "1.0.0",
-  "description": "Playing a video while scrolling the page",
-  "main": "index.js",
+  "description": "Playing a video while scrolling",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mustafa-Habibi/play-video-on-scroll.git"
   },
-  "author": "",
+  "author": "Mustafa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mustafa-Habibi/play-video-on-scroll/issues"
   },
-  "homepage": "https://github.com/Mustafa-Habibi/play-video-on-scroll#readme"
+  "homepage": "https://github.com/Mustafa-Habibi/play-video-on-scroll#readme",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.3"
+  }
 }
