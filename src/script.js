@@ -9,19 +9,27 @@ const video = document.querySelector(".video");
 gsap.registerPlugin(ScrollTrigger);
 
 // Video animation
-let accelAmount = 0.25;
+let accelAmount = 0.1;
 let scrollPosition = 0;
 let delay = 0;
-let myInterval = null;
+// let myInterval = null;
 
-const startSetInterval = function () {
-  myInterval = setInterval(() => {
-    delay += (scrollPosition - delay) * accelAmount;
-    console.log(scrollPosition, delay);
+// const startSetInterval = function () {
+//   myInterval = setInterval(() => {
+//     delay += (scrollPosition - delay) * accelAmount;
+//     console.log(scrollPosition, delay);
 
-    video.currentTime = delay;
-  }, 33);
-};
+//     video.currentTime = delay;
+//   }, 33);
+// };
+setInterval(() => {
+  delay += (scrollPosition - delay) * accelAmount;
+  console.log(scrollPosition, delay);
+
+  if (delay < 0 || delay > video.duration) return;
+
+  video.currentTime = delay;
+}, 33);
 
 // Gsap animation
 ScrollTrigger.create({
@@ -32,11 +40,10 @@ ScrollTrigger.create({
   scrub: true,
   onUpdate: (progress) => {
     scrollPosition = progress.progress * video.duration;
-    // video.currentTime = scrollPosition;
   },
-  onEnter: startSetInterval,
-  onLeave: () => clearInterval(myInterval),
-  onEnterBack: startSetInterval,
-  onLeaveBack: () => clearInterval(myInterval),
+  // onEnter: startSetInterval,
+  // onLeave: () => clearInterval(myInterval),
+  // onEnterBack: startSetInterval,
+  // onLeaveBack: () => clearInterval(myInterval),
   markers: true,
 });
