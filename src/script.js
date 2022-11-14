@@ -38,7 +38,7 @@ ScrollTrigger.create({
   trigger: ".video-wrapper",
   start: "start start",
   end: "bottom bottom",
-  pin: videoPinned,
+  pin: ".video-pinned",
   scrub: true,
   onUpdate: (progress) => {
     scrollPosition = progress.progress * video.duration;
