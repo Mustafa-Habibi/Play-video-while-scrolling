@@ -36,4 +36,10 @@
   max-width: 690px;
   max-height: 512px;
   object-fit:cover; 
+  /* margin-bottom: 600px; */
+}
+
+.canvas{
+  position: absolute;
+  margin-top: 600px;
 }
