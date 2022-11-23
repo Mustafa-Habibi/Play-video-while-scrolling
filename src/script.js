@@ -3,8 +3,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Elements
 const video = document.querySelector(".video");
-// const canvas = document.querySelector(".canvas");
 
+// const canvas = document.querySelector(".canvas");
 // let ctx = canvas.getContext("2d");
 
 // const canvas = document.querySelector(".canvas");
