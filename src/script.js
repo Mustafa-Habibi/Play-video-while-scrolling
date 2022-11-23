@@ -7,6 +7,9 @@ const video = document.querySelector(".video");
 
 // let ctx = canvas.getContext("2d");
 
+// const canvas = document.querySelector(".canvas");
+// var ctx = canvas.getContext("2d");
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Video animation
