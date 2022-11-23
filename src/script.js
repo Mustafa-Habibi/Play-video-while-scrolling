@@ -6,6 +6,9 @@ const videoWrapper = document.querySelector(".video-wrapper");
 const videoPinned = document.querySelector(".video-pinned");
 const video = document.querySelector(".video");
 
+// const canvas = document.querySelector(".canvas");
+// var ctx = canvas.getContext("2d");
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Video animation
