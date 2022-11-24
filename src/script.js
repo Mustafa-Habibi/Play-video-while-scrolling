@@ -5,12 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const video = document.querySelector(".video");
 video.pause();
 
-// const canvas = document.querySelector(".canvas");
-// let ctx = canvas.getContext("2d");
-
-// const canvas = document.querySelector(".canvas");
-// var ctx = canvas.getContext("2d");
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Video animation
@@ -33,7 +27,6 @@ ScrollTrigger.create({
   trigger: ".video-wrapper",
   start: "start start",
   end: "bottom bottom",
-  pin: ".video-pinned",
   scrub: true,
   onUpdate: (progress) => {
     scrollPosition = progress.progress * video.duration;

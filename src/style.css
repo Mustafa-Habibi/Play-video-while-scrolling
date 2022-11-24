@@ -18,7 +18,8 @@
 
 .video-wrapper{
   height: 500vh;
-  background-color: rgb(189, 236, 209);
+  background-color: black;
+  position: relative;
 }
 
 .video-pinned{
@@ -26,20 +27,15 @@
   height: 100vh;
   display: grid;
   place-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .video{
-  width: 172.5px;
-  height: 128px;
-  /* aspect-ratio: 690/512;
+  width: 100vw;
+  aspect-ratio: 690/512;
   max-width: 690px;
-  max-height: 512px; */
+  max-height: 512px;
   object-fit:cover; 
-  border: 3px solid red;
-  /* margin-bottom: 600px; */
 }
 
-/* .canvas{
-  position: absolute;
-  margin-top: 600px;
-} */
